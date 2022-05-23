@@ -7,6 +7,7 @@ namespace lab2sem
             InitializeComponent();
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
             richTextBox1.Text = "";
@@ -85,6 +86,5 @@ namespace lab2sem
         {
             this.Close();
         }
-
     }
 }

@@ -256,6 +256,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.ClientSize = new System.Drawing.Size(818, 436);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button3);
@@ -263,6 +265,9 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.MaximumSize = new System.Drawing.Size(836, 483);
+            this.MinimumSize = new System.Drawing.Size(836, 483);
             this.Name = "Form1";
             this.Text = "Генератор паролей";
             this.groupBox1.ResumeLayout(false);
