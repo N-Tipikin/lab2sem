@@ -32,8 +32,6 @@
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
@@ -56,8 +54,6 @@
             this.groupBox1.Controls.Add(this.numericUpDown2);
             this.groupBox1.Controls.Add(this.numericUpDown1);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.checkBox6);
-            this.groupBox1.Controls.Add(this.checkBox5);
             this.groupBox1.Controls.Add(this.checkBox4);
             this.groupBox1.Controls.Add(this.checkBox3);
             this.groupBox1.Controls.Add(this.checkBox2);
@@ -104,61 +100,39 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(23, 176);
+            this.label5.Location = new System.Drawing.Point(23, 195);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(116, 30);
             this.label5.TabIndex = 12;
             this.label5.Text = "Атрибуты:";
             // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Font = new System.Drawing.Font("Segoe UI", 12.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox6.Location = new System.Drawing.Point(217, 322);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(65, 34);
-            this.checkBox6.TabIndex = 11;
-            this.checkBox6.Text = "a-z";
-            this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Segoe UI", 12.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox5.Location = new System.Drawing.Point(52, 322);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(71, 34);
-            this.checkBox5.TabIndex = 10;
-            this.checkBox5.Text = "A-Z";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
             this.checkBox4.Font = new System.Drawing.Font("Segoe UI", 12.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox4.Location = new System.Drawing.Point(217, 268);
+            this.checkBox4.Location = new System.Drawing.Point(217, 297);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(66, 34);
+            this.checkBox4.Size = new System.Drawing.Size(65, 34);
             this.checkBox4.TabIndex = 9;
-            this.checkBox4.Text = "а-я";
+            this.checkBox4.Text = "a-z";
             this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Font = new System.Drawing.Font("Segoe UI", 12.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox3.Location = new System.Drawing.Point(52, 268);
+            this.checkBox3.Location = new System.Drawing.Point(52, 297);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(71, 34);
             this.checkBox3.TabIndex = 8;
-            this.checkBox3.Text = "А-Я";
+            this.checkBox3.Text = "A-Z";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Font = new System.Drawing.Font("Segoe UI", 12.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox2.Location = new System.Drawing.Point(217, 218);
+            this.checkBox2.Location = new System.Drawing.Point(217, 237);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(96, 34);
             this.checkBox2.TabIndex = 7;
@@ -169,7 +143,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 12.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox1.Location = new System.Drawing.Point(52, 218);
+            this.checkBox1.Location = new System.Drawing.Point(52, 237);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(68, 34);
             this.checkBox1.TabIndex = 6;
@@ -246,6 +220,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "Скопировать";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -286,8 +261,6 @@
         private Label label2;
         private Label label1;
         private Label label3;
-        private CheckBox checkBox6;
-        private CheckBox checkBox5;
         private CheckBox checkBox4;
         private CheckBox checkBox3;
         private CheckBox checkBox2;

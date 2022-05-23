@@ -15,60 +15,71 @@ namespace lab2sem
 
             bool numericals = checkBox1.Checked;
             bool specialsymbols = checkBox2.Checked;
-            bool ruscapital = checkBox3.Checked;
-            bool ruslowercase = checkBox4.Checked;
-            bool engcapital = checkBox5.Checked;
-            bool englowercase = checkBox6.Checked;
+            bool engcapital = checkBox3.Checked;
+            bool englowercase = checkBox4.Checked;
 
             Random type = new Random();
             Random rand = new Random();
 
             for (int i = 0; i < passlenght; i++) 
             {
-                int symbol_type = (int)type.Next(0, 6);
+                int symbol_type = (int)type.Next(1, 5);
 
-
-                if (numericals == true)
+                if (symbol_type == 1)
                 {
-                    int value = (int)rand.Next(0, 9);
-                    textBox1.Text += value.ToString();
+                    if (numericals == true)
+                    {
+                        int value = (int)rand.Next(0, 9);
+                        textBox1.Text += value.ToString();
+                        continue;
+                    }
+                    else i --;
                 }
 
-                /*if (specialsymbols == true)
+                if (symbol_type == 2) 
                 {
-                    char value = (char)rand.Next(32, 46);
-                    textBox1.Text += value.ToString();
+                    if (specialsymbols == true)
+                    {
+                        char value = (char)rand.Next(33, 46);
+                        textBox1.Text += value.ToString();
+                        continue;
+                    }
+                    else i--;
                 }
 
-                if (ruscapital == true)
+                if (symbol_type == 3)
                 {
-                    char value = (char)rand.Next();
-                    textBox1.Text += value.ToString();
+                    if (engcapital == true)
+                    {
+                        char value = (char)rand.Next(65, 90);
+                        textBox1.Text += value.ToString();
+                        continue;
+                    }
+                    else i--;
                 }
 
-                if (ruslowercase == true)
+                if (symbol_type == 4)
                 {
-                    char value = (char)rand.Next();
-                    textBox1.Text += value.ToString();
+                    if (englowercase == true)
+                    {
+                        char value = (char)rand.Next(97, 122);
+                        textBox1.Text += value.ToString();
+                        continue;
+                    }
+                    else i--;
                 }
-
-                if (engcapital == true)
-                {
-                    char value = (char)rand.Next();
-                    textBox1.Text += value.ToString();
-                }
-
-                if (englowercase == true)
-                {
-                    char value = (char)rand.Next();
-                    textBox1.Text += value.ToString();
-                }*/
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {     
+            //textBox1.Copy();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
     }
 }
